@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title> SICS JWALAMUKHI</title>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-digimedia-v1.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<style>
+
+
+.card-big-shadow {
+    /* max-width: 320px; */
+    position: relative;
+}
+
+.coloured-cards .card {
+    margin-top: 30px;
+}
+
+.card[data-radius="none"] {
+    border-radius: 0px;
+}
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+    background-color: #FFFFFF;
+    color: #252422;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.card[data-background="image"] .title, .card[data-background="image"] .stats, .card[data-background="image"] .category, .card[data-background="image"] .description, .card[data-background="image"] .content, .card[data-background="image"] .card-footer, .card[data-background="image"] small, .card[data-background="image"] .content a, .card[data-background="color"] .title, .card[data-background="color"] .stats, .card[data-background="color"] .category, .card[data-background="color"] .description, .card[data-background="color"] .content, .card[data-background="color"] .card-footer, .card[data-background="color"] small, .card[data-background="color"] .content a {
+    color: #FFFFFF;
+}
+.card.card-just-text .content {
+    padding: 50px 65px;
+    text-align: center;
+}
+.card .content {
+    padding: 20px 20px 10px 20px;
+}
+.card[data-color="blue"] .category {
+    color: #7a9e9f;
+}
+
+.card .category, .card .label {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.card-big-shadow:before {
+    background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: -12%;
+    content: "";
+    display: block;
+    left: -12%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+h4, .h4 {
+    font-size:40px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+h6, .h6 {
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.card .description {
+    font-size: 16px;
+    color: #66615b;
+}
+.content-card{
+    margin-top:30px;    
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+/*======== COLORS ===========*/
+.card[data-color="blue"] {
+    background: #b8d8d8;
+}
+.card[data-color="blue"] .description {
+    color: #506568;
+}
+
+.card[data-color="green"] {
+    background: #d5e5a3;
+}
+.card[data-color="green"] .description {
+    color: #60773d;
+}
+.card[data-color="green"] .category {
+    color: #92ac56;
+}
+
+.card[data-color="yellow"] {
+    background: #ffe28c;
+}
+.card[data-color="yellow"] .description {
+    color: #b25825;
+}
+.card[data-color="yellow"] .category {
+    color: #d88715;
+}
+
+.card[data-color="brown"] {
+    background: #d6c1ab;
+}
+.card[data-color="brown"] .description {
+    color: #75442e;
+}
+.card[data-color="brown"] .category {
+    color: #a47e65;
+}
+
+.card[data-color="purple"] {
+    background: #baa9ba;
+}
+.card[data-color="purple"] .description {
+    color: #3a283d;
+}
+.card[data-color="purple"] .category {
+    color: #5a283d;
+}
+
+.card[data-color="orange"] {
+    background: #ff8f5e;
+}
+.card[data-color="orange"] .description {
+    color: #772510;
+}
+.card[data-color="orange"] .category {
+    color: #e95e37;
+}
+  
+
+</style>
+   
+</head>
+
+<body>
+
+  <!--loading-->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- navbar top -->
+  <div class="pre-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8 col-7">
+          <ul class="info">
+            <li><a href="#"><i class="fa fa-envelope"></i>info@jmukhisics.in</a></li>
+            <li><a href="#"><i class="fa fa-phone"></i> +918988255242 ||
+                +918219626192</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-5">
+          <ul class="social-media">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- navbar-->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="images/logo.png" alt="" style="height: 60px ; width:60px;">
+            </a>
+
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link active"><a href="Discloure.html" class="active"
+                        style="color:hotpink;">Mandatory Public
+                        Disclosure</a></li>
+                <li class="nav-item  dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="AboutSchool.html">About School</a>
+                        <a class="dropdown-item" href="Executive-welcome.html">Execution Welcome</a>
+                        <a class="dropdown-item" href="SchoolHistory.html">School History</a>
+                        <a class="dropdown-item" href="SchoolDecorum.html">School Decorum</a>
+                        <a class="dropdown-item" href="Rules.html">Rules And Regulation</a>
+                        <a class="dropdown-item" href="Extrainformation.html">Extra Information</a>
+                    </div>
+                </li>
+                <li class="nav-item  dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Portal
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="Acadamics.html">Academics</a>
+                        <a class="dropdown-item" href="Admission.html">Admission</a>
+                        <a class="dropdown-item" href="Facilities.html">Facilities</a>
+                        <a class="dropdown-item" href="Activities.html">Activites</a>
+
+                    </div>
+                </li>
+                <li class="nav-item  dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Extra
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="BlogEvent.html">Events and Blog</a>
+                        <a class="dropdown-item" href="Gallery.html">Gallery</a>
+
+                        <a class="dropdown-item" href="TransferCertificate.html">Transfer Certificate</a>
+                    </div>
+                </li>
+                <li class="nav-link"><a href="Contact.html">Contact</a></li>
+                <li class="nav-link">
+                    <div class="border-first-button"><a href="homepage_1.html">Login</a></div>
+                </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+ 
+
+  <img src="images/ptm.jpg" class="img-fluid" alt="Responsive image">
+
+  <div class="schoolA">
+      <div class="container p-5">
+          <h1 style="color:green ; font-weight:bold; font-size: 50px;">Visiting Our School</h1>
+      <p class="pt-5">In order to help students adjust, themselves in their new and changed environment, parents and guardians are requested not a visit the students till at least one month has passed since their admission. During an academic year the parents are normally allowed to visit. In no case the parents or guardian should go direct to their wards. They should meet them through the Principle or the Headmaster, Parents and guardian are requested not to meet their wards in their wards bedroom or study room. They should meet them only in the reception hall, common room. Relatives or friends are not allowed to see the students unless they bring an introductory letter from their parents or guardians. Parents and guardians are expected not to visit their ward during the school hours. They may see them on Sunday or holidays, Parents are requested not to visit the house or come to school after 7:30 P.M to meet the Housemaster /Headmaster/Principal. No leave will be granted and parents not allowed to meet their wards after 7:30 p.m.</p>
+  </div></div>
+
+  <div class="container">
+    <h2>OUR SCHOOL RULES</h2>
+    
+    <ul>
+        <li><p>1. Parents /Guardians will be bound by the school rules in all respects, which may be changed, from time to time. In all matters of dispute, the decision of the Principal will be binding on the parents/guardians.</p></li>
+       
+    <li><p>2. In accordance with the rules of the school, the parents/guardians will accept and authorise participation of their wards in compulsory programmes of tours, treks, expeditions.</p></li>
+    <li><p>3. The Parents/guardians will hold the school indemnified against all claims arising through illness, accident or any, camps etc. during their stay at the school, other cause.. Add shrimp, season with salt and pepper and cook until pink and completely opaque.</p></li>
+<li><p>4.The parents/guardians will authorised the Principal and through him the staff of the school to act in locoparentis of their wards while they are in the school or on tours, treks, expedition, camps etc.</p></li>
+
+<li><p>5. The parents/guardians will authorised the Principal to take necessary action on their behalf in case of any emergency operation or any other such condition where their permission is needed but cannot be obtained in time.</p></li>
+
+<li><p>6.The parents/guardians will agree that in the event of their child/children being withdrawn during the course of that year, whatever the reason, the full fees laid down by the school for the whole year will be paid by them.</p></li>
+<li><p>7.Smoking, use of alcoholic drinks or drugs, leaving school or station without permission are strictly prohibited. Students involving in any such or similar activities will be expelled from school.</p></li>
+
+<li><p>8.The Principal is fully empowered to remove a student from school if in his opinion the student has failed to accept the discipline of the school and his continued presence is detrimental to the school and/or the student fails to come up to the academic standard of his/her class and when detention in the same class would make the student too old for his class..</p></li>
+
+<li><p>9.All parents will sign an agreement with the school at the time when their son/ward joins the school.</p></li>
+<li><p>10.Unnecessary running around, shouting in the school area is not allowed, Sshouting in the corridors is not permitted.</p></li>
+</ul>
+</div>
+
+  <div class="container bootstrap snippets bootdeys">
+    <div class="row">
+        <div class="col-lg-12 col-sm-6 content-card">
+            <div class="card-big-shadow">
+                <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
+                    <div class="content">
+                 
+                        <h4 class="title"><a href="#">LEAVE REGULATION</a></h4>
+                        <ul><li>Students are not allowed to go home during the school term except in a few cases as mentioned below:</li></ul>
+                    <div class="row">
+                        <div class="col-lg-4"> <p>Students may be allowed a maximum leave of three days for the wedding of their brother or sister. This leave will not be granted during examination days or during a camp.</p></div> 
+                          <div class="col-lg-4"><p>For all leave, written request should be made to the Principal. No leave shall be granted on a students request and no leave shall be granted on the request mase through Telgram/Fax! Telephone</p>.</div>  
+                           <div class="col-lg-4"><p>Leave may be granted for some particular treatment of the student provided the Mo/Chief Medical Officer recommends it.</p></div>
+                              <div class="col-lg-4"><p>Leave may be granted for some particular treatment of the student provided the Mo/Chief Medical Officer recommends itIf a student is detained due to some illness, a medical certificate should accompany his application</p>.</div>  
+                               <div class="col-lg-4"><p>Leave shall be considered only when the parent makes an application. Parents should not the date and the time, when the student is to return after leave. If a student does not return on due date, his name will be struck off from the school rolls and he may not be accepted back. The same rules applies for returning late after summer or winter vacation. A fine of Rs. 25/- per day shall be imposed for latecomers.</p></div>
+                    </div>
+                    
+                    </div>
+                </div> <!-- end card -->
+            </div>
+        </div>
+        </div>
+        </div>
+
+  
+
+  <footer>
+    <div class="container">
+      <div class="row p-5">
+
+        <div class="col-3">
+          <li class="nav-link text-center"><a href="AboutSchool.html"
+              style="color:white; font-size: 22px; font-weight: bold; ">About</a></li>
+        </div>
+        <div class="col-3">
+          <li class="nav-link text-center"><a href="Admission.html"
+              style="color:white; font-size: 22px; font-weight: bold; ">Portal</a></li>
+        </div>
+        <div class="col-3">
+          <li class="nav-link text-center"><a href="Extrainformation.html"
+              style="color:white; font-size: 22px; font-weight: bold; ">Extra</a></li>
+        </div>
+        <div class="col-3">
+          <li class="nav-link text-center"><a href="Contact.html"
+              style="color:white; font-size: 22px; font-weight: bold; ">Contact</a></li>
+        </div>
+        <hr>
+        <div class="col-12">
+
+          <p> School was established in April, 2014. It got affiliated to Central Board of Secondary Education in 2016.
+            We have thye best infrastructure in whole of Kangra District and most of our students stood first in
+            Children Science Congress.We are proud to announce that we have 100% result since 2016.</p>
+
+          <h5 class="text-right"><span style="color: red;">Address :</span> Bhatti-Khoula, Jawalamukhi, Kangra, India
+          </h5>
+
+          <h5><span style="color: red;">Email :</span> info@jmukhisics.in</h5>
+          <h5> <span style="color: red;">Contact No. :</span> +918988255242,
+            +918219626192</h5>
+        </div>
+<hr>
+<div class="col-12 text-white text-center">© 2021 . All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
